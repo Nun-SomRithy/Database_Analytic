@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="../img/home/logohead.png">
+
+  <!-- icon -->
+  <!-- Link font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Rajdhani:wght@600&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Heebo&family=Nunito:wght@700&family=Rajdhani:wght@600&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=Nunito:wght@700&display=swap"
+    rel="stylesheet">
+  <!-- Link icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootraps file  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- style -->
+  <link rel="stylesheet" href="../Css/about.css">
+  <title>About</title>
+</head>
+<style>
+  .container .col-md-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container .card::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    height: 0;
+    width: 150%;
+    background-color: #E85854;
+    z-index: -1;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .container .card {
+    width: 280px;
+    height: 350px;
+    overflow: hidden;
+    z-index: 3;
+    transition: all 0.5s ease-in-out;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+  }
+
+  .container .card:hover::before {
+    height: 150px;
+  }
+
+  .container .card .img-container {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .container .card:hover .img-container {
+    border: 10px solid #E85854;
+  }
+
+  .container .card .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .container .card:hover .img-container img {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transform: scale(0.8);
+  }
+
+  .container .card .h3 {
+    margin-bottom: 5px !important;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    pointer-events: none;
+  }
+
+  .container .card .designation {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    pointer-events: none;
+  }
+
+  .container .card ul {
+    background-color: #E85854;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(100px);
+  }
+
+  .container .card:hover ul {
+    transform: translateY(40px);
+  }
+
+  .container .card ul li {
+    padding: 5px 8px;
+    transition: all 0.4s;
+  }
+
+  .container .card ul li a {
+    color: #FFF;
+  }
+
+  .container .card ul li:hover {
+    background: #fff;
+  }
+
+  .container .card ul li:hover a {
+    color: #E85854;
+  }
+</style>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img src="../img/course/logo.png" alt="" style="width: 300px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <ul class="navbar-nav  ">
+              <li class="nav-item me-lg-3">
+                <a class="nav-link  " aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="./course.html">Course</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="./enroll.html">Enroll</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="sign-up.html">Sign Up</a>
+              </li>
+            </ul>
+          </div>
+          <div class="fm">
+            <form class="  d-flex  justify-content-center" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                style="width: 150px;">
+              <button class="btn btn-outline-danger" type="submit">Search</button>
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="about">
+      <section class="content">
+        <h1>About Us</h1>
+        <p>Good e-Learning is a leading business and IT training provider
+          delivering engaging blended training packages
+          for professionals, teams, and departments</p>
+      </section>
+    </div>
+
+
+    <section>
+      <div class="container ">
+        <div class="row  dis">
+          <div class="col-lg-6 col-sm-12">
+            <div class="item-2">
+              <img src="../img/About/pic1.jpg " alt="logo" width: 539px; height: 372px;>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12 ">
+            <div class="item-1 text-center justify-content-center w-100"
+              style="padding-left: 0px; margin-bottom: 70px;">
+              <h1 class="text-center">Welcome to E-learning</h1>
+              <p class="text-center cs" style="margin-bottom: 20px;">
+                We begin this module with an introduction to the idea of an "e-learning ecology" and the notion of
+                "affordance." We use this idea to map the range of innovative activities that we may be able to use in
+                e-learning environments...
+              </p>
+              <a href="./enroll.html" style="text-decoration: none;">
+                <button class="button">Read More</button>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <br><br>
+
+    </section>
+    <section>
+      <div class="creator">
+        <h2>Expert Instructor</h2>
+      </div><br><br>
+      <!-- <div class="container ">
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center my-2">
+            <div class="card ">
+              <div class="w-100 ">
+                <div class="card-image-wrapper">
+                  <img src="../img/About/worker1.png" class="card-img-top img-fluid" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Seth</h5>
+                  <p class="card-text"> The function of good software is to make the complex appear to be simple." -
+                    Grady Booch
+                  </p>
+                  <span class="ic">
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center my-2">
+            <div class="card ">
+              <div class="w-100 ">
+                <div class="card-image-wrapper">
+                  <img src="../img/About/worker2.png" class="card-img-top img-fluid" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Saran</h5>
+                  <p class="card-text"> I am truly impressed with how you have managed to meet every goal set before
+                    you.
+                  </p>
+                  <span class="ic">
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center my-2">
+            <div class="card ">
+              <div class="w-100 ">
+                <div class="card-image-wrapper">
+                  <img src="../img/About/worker3.png" class="card-img-top img-fluid" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Nita</h5>
+                  <p class="card-text">"Spring is more than just a framework. It's a way of thinking about and
+                    approaching"
+                  </p>
+                  <span class="ic">
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-md-0 mb-3">
+            <div class="card d-flex flex-column align-items-center justify-content-center">
+              <div class="inner-content d-flex flex-column align-items-center justify-content-center">
+                <div class="img-container rounded-circle">
+                  <img
+                    src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="" class="rounded-circle">
+                </div>
+                <div class="h3">Lisa Miller</div>
+                <p class="designation text-muted text-uppercase">Web Developer</p>
+              </div>
+              <ul
+                class="social-links d-flex align-items-center justify-content-around list-unstyled w-100 fs-5 m-0 p-0">
+                <li><a href="#"><span class="fab fa-facebook"></span></a></li>
+                <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                <li><a href="#"><span class="fab fa-google-plus"></span></a></li>
+                <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 mb-md-0 mb-3">
+            <div class="card d-flex flex-column align-items-center justify-content-center">
+              <div class="inner-content d-flex flex-column align-items-center justify-content-center">
+                <div class="img-container rounded-circle">
+                  <img
+                    src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="" class="rounded-circle">
+                </div>
+                <div class="h3">David Peterson</div>
+                <p class="designation text-muted text-uppercase">Full Stack Developer</p>
+              </div>
+              <ul
+                class="social-links d-flex align-items-center justify-content-around list-unstyled w-100 fs-5 m-0 p-0">
+                <li><a href="#"><span class="fab fa-facebook"></span></a></li>
+                <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                <li><a href="#"><span class="fab fa-google-plus"></span></a></li>
+                <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 mb-md-0 mb-3">
+            <div class="card d-flex flex-column align-items-center justify-content-center">
+              <div class="inner-content d-flex flex-column align-items-center justify-content-center">
+                <div class="img-container rounded-circle">
+                  <img
+                    src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="" class="rounded-circle">
+                </div>
+                <div class="h3">Jhon Buttler</div>
+                <p class="designation text-muted text-uppercase">App Developer</p>
+              </div>
+              <ul
+                class="social-links d-flex align-items-center justify-content-around list-unstyled w-100 fs-5 m-0 p-0">
+                <li><a href="#"><span class="fab fa-facebook"></span></a></li>
+                <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                <li><a href="#"><span class="fab fa-google-plus"></span></a></li>
+                <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-md-4 mb-md-0 mb-3">
+            <div class="card d-flex flex-column align-items-center justify-content-center">
+              <div class="inner-content d-flex flex-column align-items-center justify-content-center">
+                <div class="img-container rounded-circle">
+                  <img
+                    src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="" class="rounded-circle">
+                </div>
+                <div class="h3">Lisa Miller</div>
+                <p class="designation text-muted text-uppercase">Web Developer</p>
+              </div>
+              <ul
+                class="social-links d-flex align-items-center justify-content-around list-unstyled w-100 fs-5 m-0 p-0">
+                <li><a href="#"><span class="fab fa-facebook"></span></a></li>
+                <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                <li><a href="#"><span class="fab fa-google-plus"></span></a></li>
+                <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 mb-md-0 mb-3">
+            <div class="card d-flex flex-column align-items-center justify-content-center">
+              <div class="inner-content d-flex flex-column align-items-center justify-content-center">
+                <div class="img-container rounded-circle">
+                  <img
+                    src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="" class="rounded-circle">
+                </div>
+                <div class="h3">David Peterson</div>
+                <p class="designation text-muted text-uppercase">Full Stack Developer</p>
+              </div>
+              <ul
+                class="social-links d-flex align-items-center justify-content-around list-unstyled w-100 fs-5 m-0 p-0">
+                <li><a href="#"><span class="fab fa-facebook"></span></a></li>
+                <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                <li><a href="#"><span class="fab fa-google-plus"></span></a></li>
+                <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 mb-md-0 mb-3">
+            <div class="card d-flex flex-column align-items-center justify-content-center">
+              <div class="inner-content d-flex flex-column align-items-center justify-content-center">
+                <div class="img-container rounded-circle">
+                  <img
+                    src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="" class="rounded-circle">
+                </div>
+                <div class="h3">Jhon Buttler</div>
+                <p class="designation text-muted text-uppercase">App Developer</p>
+              </div>
+              <ul
+                class="social-links d-flex align-items-center justify-content-around list-unstyled w-100 fs-5 m-0 p-0">
+                <li><a href="#"><span class="fab fa-facebook"></span></a></li>
+                <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                <li><a href="#"><span class="fab fa-google-plus"></span></a></li>
+                <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+  <!-- Footer  -->
+
+  <footer class="bd-footer p-5">
+    <div class="container py-4 py-md-5 px-4 px-md-3 " style=" padding-top: 0rem!important;">
+      <div class="row test">
+
+
+        <div class="col-md-5 col-lg-2">
+          <h5 class="content_foo">Community</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#">Documentation</a></li>
+            <li class="mb-2"><a href="#">Resource</a></li>
+            <li class="mb-2"><a href="#">Responsibility</a></li>
+            <li class="mb-2"><a href="#">Budget</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 col-lg-2 ">
+          <h5 class="content_foo">Contact</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#">
+                Email <i class="fa-solid fa-envelope"></i>
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="#">
+                Twitter <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="#">
+                Instagram <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="#">
+                Phone <i class="fa-solid fa-phone"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 offset-md-1 mt-2">
+          <form>
+            <h5 class="content_foo">Subscribe to our newsletter</h5>
+            <p class="list-unstyled">Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="button content-2" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>© 2023 No CopyRight, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#twitter"></use>
+              </svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#instagram"></use>
+              </svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook"></use>
+              </svg></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- Script BootJs -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
